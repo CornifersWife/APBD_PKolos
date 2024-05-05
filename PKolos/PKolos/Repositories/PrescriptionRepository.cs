@@ -18,7 +18,7 @@ public class PrescriptionRepository : IPrescriptionRepository {
     }
 
     public async Task<Prescription> GetPrescription(int idPrescription) {
-        using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
+        await using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
         await con.OpenAsync();
 
         await using var cmd = new SqlCommand();
@@ -41,7 +41,7 @@ public class PrescriptionRepository : IPrescriptionRepository {
     }
 
     public async Task<IEnumerable<GottenPrescription>> GetPrescriptions() {
-        using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
+        await using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
         await con.OpenAsync();
 
         await using var cmd = new SqlCommand();
@@ -75,7 +75,7 @@ public class PrescriptionRepository : IPrescriptionRepository {
 
 
     public async Task<IEnumerable<GottenPrescription>> GetPrescriptions(string doctorsLastName) {
-        using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
+        await using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
         await con.OpenAsync();
 
         await using var cmd = new SqlCommand();
@@ -110,7 +110,7 @@ public class PrescriptionRepository : IPrescriptionRepository {
     }
 
     public async Task<int> AddPrescription(AddPrescription addPrescription) {
-        using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
+        await using var con = new SqlConnection(configuration["ConnectionStrings:DefaultConnection"]);
         await con.OpenAsync();
 
         await using var cmd = new SqlCommand();

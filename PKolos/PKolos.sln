@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKolos", "PKolos\PKolos.csproj", "{372A902E-9E88-4F19-BC35-169899356822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372A902E-9E88-4F19-BC35-169899356822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372A902E-9E88-4F19-BC35-169899356822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372A902E-9E88-4F19-BC35-169899356822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372A902E-9E88-4F19-BC35-169899356822}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
